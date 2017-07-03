@@ -57,6 +57,7 @@ header {
   padding-bottom: 15px;
   margin-bottom: 20px;
   border-bottom: 2px solid #ddddff;
+
 }
 
 #site_container {
@@ -70,6 +71,7 @@ header {
 
 #main_nav {
   text-align: center;
+
 }
 
 #main_nav a {
@@ -88,13 +90,14 @@ header {
   background-color: #ddffff;
   padding: 10px;
   margin-top: 10px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 #sidebar_content {
   background-color: white;
   padding: 10px;
   margin-top: 10px;
-  display: flex;
   flex-direction: column;
 }
 
@@ -102,6 +105,8 @@ header {
   background-color: #ffffdd;
   margin-bottom: 15px;
   padding-left: 20px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 #site_footer {
@@ -109,17 +114,50 @@ header {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 10px;
-  display: flex;
-  justify-content: space-around;
+  text-align: center;
 
 }
 
 #site_footer a{
   padding-right: 12px;
+
 }
 
-@@media screen and (min-width: 600px) {
-}
+@media screen and ( min-width: 600px ){
 
-@media screen and (min-width: 1100px) {
+    #site_container header > nav > a{
+      margin-left: 2px;
+      margin-right: 2px;
+      width: 40%;
+    }
+
+    #main_nav {
+      display: flex;
+    }
+
+    #site_container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /*#site_container nav{
+      /*display: flex;*/
+      /*justify-content: space-around;
+    }
+
+    #site_container nav a {
+      flex-basis: 30%;
+      flex-grow: 1;
+      margin-right: 10px;
+    }*/
+
+/*#site_footer {
+
+}*/
+
+    }
+
+
+@media screen and ( min-width: 1100px ){
+
 }
