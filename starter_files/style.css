@@ -125,20 +125,27 @@ header {
 
 @media screen and ( min-width: 600px ){
 
-    #site_container header > nav > a{
+    header > nav > a{
       margin-left: 2px;
       margin-right: 2px;
-      width: 40%;
+      width: 35%;
     }
 
     #main_nav {
       display: flex;
     }
 
-    #site_container {
+    #sidebar_content {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      margin-left: 0;
     }
+
+    /*#sidebar_content {
+      padding: 10px;
+        }*/
+
+  }
 
     /*#site_container nav{
       /*display: flex;*/
